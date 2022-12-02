@@ -1,0 +1,14 @@
+    void FixedUpdate()
+    {
+        if (GameCount >= 3)
+        {
+            SceneManager.LoadScene("Ad");
+    
+            GameCount = 0;
+        }
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
+    }
